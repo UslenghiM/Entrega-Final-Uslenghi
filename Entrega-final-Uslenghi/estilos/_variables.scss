@@ -1,0 +1,16 @@
+$color-principal: rgba(54, 28, 89, 0.605);
+
+
+@mixin caja-nosotros ($colorfondo,$tamanofuente,$center,$borderadio,$padding,$border)
+{
+    background-color: $colorfondo;
+    font-size: $tamanofuente;
+    text-align: $center;
+    border-radius: $borderadio;
+    padding: $padding;
+    border: $border;
+
+}
+
+
+

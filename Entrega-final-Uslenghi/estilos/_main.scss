@@ -1,0 +1,227 @@
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.1fr) repeat(2, 1fr)  0.2fr 1fr 1fr 1fr 0.1fr;
+
+    grid-template-areas: 'h1 h1 h1 h1'
+                         'nav nav nav nav'
+                         'serv1 serv1 serv2 serv2'
+                         'serv3 serv3 serv4 serv4'
+                         'nostit nostit nostit nostit'
+                         'nos1 nos1 nos2 nos2'
+                         'nos3 nos3 nos4 nos4'
+                         'contacto1 contacto1 contacto1 contacto1'
+                         'footer footer footer footer';
+}
+
+
+.h2serv
+{
+    text-align: center;
+    padding-left: 40px;
+}
+
+.serv1:hover
+{
+    border-radius: 10%;
+    background-color: $color-principal;
+    transition-duration: 1s;
+}
+.serv2:hover
+{
+    border-radius: 10%;
+    background-color: $color-principal;
+    transition-duration: 1s;
+}
+
+.serv3:hover
+{
+    border-radius: 10%;
+    background-color: $color-principal;
+    transition-duration: 1s;
+}
+.serv4:hover
+{
+    border-radius: 10%;
+    background-color: $color-principal;
+    transition-duration: 1s;
+}
+
+.parserv
+{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    padding: 5%;
+}
+.imgserv
+{
+    width: 120px;
+    height: 120px;
+    padding-left: 40%;
+    margin-top: 20%;
+}
+.serv1
+{
+    background-color: azure;
+    grid-area: serv1;
+}
+
+.serv2
+{
+    background-color: azure;
+    grid-area: serv2;
+}
+
+.serv3
+{
+    background-color: azure;
+    grid-area: serv3;
+}
+.serv4
+{
+    background-color: azure;
+    grid-area: serv4;
+}
+
+
+.nostit
+{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    grid-area: nostit;
+    margin: 5%;
+    
+}
+
+.nostit:hover
+{
+    text-transform: uppercase;
+}
+
+.imgnos
+{
+    width: 100px;
+    height: 100px;
+    padding: 5%;
+}
+
+.nos1
+{   
+    @include caja-nosotros(azure,30px,center,20px,15%,1px);
+    border: solid;
+    grid-area: nos1;
+}
+
+.nos1:hover
+{
+    color: azure;
+    background-color: black;
+    transition-duration: 1s;
+}
+.nos2
+{
+    @include caja-nosotros(azure,30px,center,20px,15%,1px);
+    border: solid;
+    grid-area: nos2;
+}
+
+.nos2:hover
+{
+    color: azure;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+.nos3
+{
+    @include caja-nosotros(azure,30px,center,20px,15%,1px);
+    border:  solid;
+    grid-area: nos3;
+}
+
+.nos3:hover
+{
+    color: azure;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+.nos4
+{
+    @include caja-nosotros(azure,30px,center,20px,15%,1px);
+    border: solid;
+    grid-area: nos4;
+}
+
+.nos4:hover
+{
+    color: azure;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+.caja2
+{   
+    
+    margin-top: 20px;
+    background-color: black;
+    background-color: transparent;
+    border-radius: 20px;
+    padding-left: 30%;
+    
+}
+
+.form_input{
+    padding: 10px;
+}
+
+input,textarea
+{
+    width: 50%;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: $color-principal;
+    font-size: 30px;
+    color: black;
+}
+
+textarea
+{
+
+    min-width: 50%;
+    resize: none;
+    min-height: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+.dw1
+{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 10%;
+
+    color: #111;
+}
+
+.dw1:hover
+{
+    color: black;
+    text-decoration: underline;
+}
+.contacto1
+{
+    background-color: azure;
+    grid-area: contacto1;
+}
+
+.contacto2
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-area: 'caja1 caja2';
+}
+
