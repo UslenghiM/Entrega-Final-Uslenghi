@@ -296,41 +296,41 @@ footer {
 @media only screen and (max-width: 550px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 0.1fr) repeat(4, 0.7fr) 0.2fr repeat(5, 0.8fr) 0.1fr;
+    grid-template-rows: repeat(2, 0.1fr) repeat(4, 0.8fr) 0.2fr repeat(5, 0.8fr) 0.1fr;
     grid-template-areas: "h1" "nav" "serv1" "serv2" "serv3" "serv4" "nostit" "nos1" "nos2" "nos3" "nos4" "contacto1" "footer";
   }
   h1 {
+    font-size: 21px;
+  }
+  nav ul {
     font-size: 18px;
   }
-  nav {
-    font-size: 15px;
-  }
   .parserv, .h2serv {
-    font-size: 25px;
+    font-size: 24px;
   }
   .nostit {
     font-size: 30px;
     margin: 10% 0;
   }
   .nos1, .nos2, .nos3, .nos4 {
-    font-size: 25px;
+    font-size: 24px;
   }
   .dw1 {
-    font-size: 25px;
+    font-size: 24px;
   }
   input, textarea {
     width: 100%;
     margin-left: -20%;
   }
   input {
-    font-size: 25px;
+    font-size: 24px;
   }
   .footh2 {
-    font-size: 25px;
+    font-size: 24px;
   }
   .imgfo {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
   }
 }
 * {
